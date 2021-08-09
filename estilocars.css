@@ -4,42 +4,48 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Ruslan+Display&display=swap');
 
+
 /*body*/
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    background-color: rgb(54, 54, 54);
+    background-color: #363636;
 }
 
 /*cabeçalho*/
 
 header {
-    padding: 90px;     
-    text-align: center;
+    padding-top: 90px; 
+    padding-bottom: 90px;    
     background-image: linear-gradient(to bottom , #12203C , #010101);
     box-shadow: 4px 4px 30px black;
+
+    min-width: 350px;
 }
 
 header > h1 { 
     font-size: 3em;
     color: white;
     font-family: 'Ruslan Display',cursive; 
-    
+    text-align: center; 
 }
 
 header > p {
     color: white;
+    text-align: center;
 }
 
 /*conteudo*/
 
 main {
     background-color: #DEDEDE;
-    padding: 35px;
-    width: 413px;
+    padding: 10px;
     margin: auto;
     box-shadow: 3px 3px 30px black ;
+
+    max-width: 800px;
+    min-width: 330px;
 }
 
 main > a > h2 {
@@ -91,6 +97,7 @@ main > div > img {
 }
 
 main > p {
+    color: black;
     text-align: center;
     text-indent: 25px;
     font-weight: bold;
@@ -100,10 +107,13 @@ main > p {
 /*rodape*/
 
 footer {
-    background-color: black;
-    padding: 10px;     
+    background-color: black;  
+    padding-top: 10px;   
+    padding-bottom: 10px;
     text-align: center;  
     box-shadow: 4px 4px 30px black;
+
+    min-width: 350px;
 }
 
 footer > nav > a {       
@@ -134,4 +144,24 @@ img:hover {
 
 .cor4:hover {
     background-color: rgba(0, 128, 0, 0.404);
+}
+
+span > p > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+span > p > a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+span > p > a:active {
+    color: #363636;
+}
+
+span > p {
+    text-align: center;
+    color: white;
+    margin: 5px;
 }
