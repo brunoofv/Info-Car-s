@@ -16,8 +16,8 @@ body {
 /*cabeçalho*/
 
 header {
-    padding-top: 90px; 
-    padding-bottom: 90px;    
+    padding-top: 90px;   
+    padding-bottom: 90px;  
     background-image: linear-gradient(to bottom , #12203C , #010101);
     box-shadow: 4px 4px 30px black;
 
@@ -34,6 +34,35 @@ header > h1 {
 header > p {
     color: white;
     text-align: center;
+    margin: 0px;
+}
+
+span > nav > a {  
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+
+span > nav {   
+    background-color: black;
+    background-image: linear-gradient(to bottom , #12203C , #12203ce3);
+    padding: 10px;
+    width: 100%;
+    font-family: monospace;
+    font-weight: normal;
+    text-align: center;
+
+    position: fixed;
+}
+
+span > nav > a:hover {
+    font-weight: bold;
+    text-shadow: 1px 1px 5px;
+    text-decoration: underline;
+}
+
+span > nav > a:active {
+    color: #12203C;
 }
 
 /*conteudo*/
@@ -43,20 +72,21 @@ main {
     padding: 10px;
     margin: auto;
     box-shadow: 3px 3px 30px black ;
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.493);
 
     max-width: 800px;
     min-width: 330px;
 }
 
-main > a > h2 {
+main > section > a > h2 {
     color: rgb(0, 0, 0);
     font-family: 'Ruslan Display', cursive;
     font-size: 2em;
     text-align: center;
-    padding: 5px;  
+    padding: 60px;  
 }
 
-main > a:hover {
+main > section > a:hover {
     text-decoration: underline black;
 }
 
@@ -65,7 +95,7 @@ main > section > a:hover {
 
 }
 
-main > h2 {
+main > section > h2 {
     color: rgb(0, 0, 0);
     font-family: 'Ruslan Display', cursive;
     font-size: 2em;
@@ -73,22 +103,22 @@ main > h2 {
     padding: 5px;  
 }
 
-main > a {
+main > section > a {
     text-decoration: none;
 }
 
-main > div {
+main > section > div {
     text-align: center;
 }
 
-main > div > a > img {
+main > section > div > a > img {
     background-color: white;
     border-radius: 1px 30px;
     padding: 6px;
     width: 300px;
 }
 
-main > div > img {
+main > section > div > img {
     background-color: white;
     border-radius: 1px 30px;
     padding: 6px;
@@ -96,32 +126,34 @@ main > div > img {
     text-align: center;
 }
 
-main > p {
+main > section > p {
     color: black;
     text-align: center;
     text-indent: 25px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
+    padding: 40px;
+    border-bottom: solid;
 }
 
 /*rodape*/
 
 footer {
     background-color: black;  
-    padding-top: 10px;   
+    padding-top: 10px; 
     padding-bottom: 10px;
-    text-align: center;  
-    box-shadow: 4px 4px 30px black;
-
+    text-align: center;
+    
     min-width: 350px;
 }
 
-footer > nav > a {       
-    color: white;
-    font-weight: bold;
+footer > nav > a > img {   
+    margin: 20px;      
+    border-radius: 50px; 
+}
+
+footer > nav > a {
     text-decoration: none;
-    margin: 20px;
-    border-bottom: solid white;
 }
 
 /*configuraçoes extras*/
@@ -146,14 +178,17 @@ img:hover {
     background-color: rgba(0, 128, 0, 0.404);
 }
 
+.cor5:hover {
+    background-color: green;
+}
+
 span > p > a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
 span > p > a:hover {
-    text-decoration: underline;
-    color: gray;
+    text-decoration: underline;  
 }
 
 span > p > a:active {
@@ -161,6 +196,7 @@ span > p > a:active {
 }
 
 span > p {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: white;
     margin: 5px;
